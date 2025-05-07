@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script that configures the hosts file to change localhost and facebook.com IPs
+
+# Sauvegarde du fichier hosts original
+sudo cp /etc/hosts /etc/hosts.bak
+
+# Modification du fichier hosts
+echo "127.0.0.2 localhost" | sudo tee /etc/hosts
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts 
