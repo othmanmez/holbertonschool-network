@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
-# Script that displays listening ports
+#!/bin/bash
 
-netstat -tulpn 
+# Affiche uniquement les sockets à l'écoute avec PID/nom du programme
+sudo netstat -tulpen
