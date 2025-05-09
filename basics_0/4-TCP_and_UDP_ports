@@ -1,4 +1,3 @@
-#!/bin/bash
-
-# Affiche uniquement les sockets à l'écoute avec PID/nom du programme
-sudo netstat -tulpen
+#!/usr/bin/env bash
+# shows listening sockets
+netstat -lp
